@@ -1,0 +1,118 @@
+@import url('//fonts.googleapis.com/earlyaccess/jejugothic.css');
+:root{
+    --gold : #f69f00;
+    --orange : #fcc704;
+    --dark : black;
+}
+html,body{
+    overflow: hidden;
+    font-family: "Jeju Gothic", sans-serif;
+    padding-bottom: 0 !important;
+}
+#topCarousel .carousel-item:nth-of-type(1){
+    background: url(../img/carousel_01.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+#topCarousel .carousel-item:nth-of-type(2){
+    background: url(../img/carousel_02.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+#topCarousel .carousel-item:nth-of-type(3){
+    background: url(../img/carousel_03.jpg) no-repeat center / cover;
+    height: 100vh;
+}
+#topCarousel .carousel-caption{
+    position: absolute;
+}
+#topCarousel .carousel-item:nth-of-type(1) .carousel-caption{
+    bottom: -50px;
+}
+#topCarousel .carousel-item:nth-of-type(2) .carousel-caption{
+    bottom: 50px;
+}
+#topCarousel .carousel-item:nth-of-type(3) .carousel-caption{
+    bottom: 30px;
+}
+#topCarousel .carousel-item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.5;
+}
+#topCarousel{
+    overflow: hidden;
+}
+#topCarousel .carousel-control-prev{
+    left:-200px;
+    transition: left 1s;
+}
+#topCarousel .carousel-control-next{
+    right:-200px;
+    transition: right 1s;
+}
+#topCarousel:hover .carousel-control-prev{
+    left:0px;
+}
+#topCarousel .carousel-control-prev:hover{
+    color:var(--gold)
+}
+#topCarousel:hover .carousel-control-next{
+    right:0px;
+}
+#topCarousel .carousel-control-next:hover{
+    color:var(--gold)
+}
+#topCarousel .carousel-indicators .active{
+    background-color: var(--gold);
+}
+/* loading 이미지 화면 레이아웃 */
+.loading{
+    width: 100%;
+    height: 100vh;
+}
+.loading img{
+    width: 200px;
+}
+.cs-bg-dark{
+    background-color: var(--dark);
+}
+.navbar ul.navbar-nav{
+    font-size: 0.9em;;
+}
+
+section#secret{
+    background: url(../img/menu3_about_bg.jpg) no-repeat center/cover fixed;
+    padding:100px;
+}
+
+section#cf{
+    background: url(../img/menu4_background_bg.jpg) no-repeat center/cover;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+section#contact{
+    background: url(../img/menu7_background_bg.jpg) no-repeat center/cover;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+.form-control::placeholder{
+    color:white
+}
+
+/* 네브바의 활성화 텍스트 색상 변경하기 */
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link{
+    color: var(--orange);
+}
+
+/* waypoint 클래스를 가지고 있는 요소들이 처음부터 보이지 않도록 설정 */
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6, .wp7, .wp8, .wp9, .wp10, .wp11, .wp12, .wp13, .wp14, .wp15, .wp16, .wp17, .wp18 {
+    visibility: hidden;
+}
+.animate__animated{
+    visibility:visible;
+}
+
